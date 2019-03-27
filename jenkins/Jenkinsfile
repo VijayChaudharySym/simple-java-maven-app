@@ -1,5 +1,5 @@
 pipeline {
-    agent {
+    agent { {label awx}
         docker {
             image 'maven:3-alpine'
             args '-v /home/ansible/.m2:/root/.m2'
