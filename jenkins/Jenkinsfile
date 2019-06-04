@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools {
         maven 'slavemaven' 
+		jdk 'slavejdk'        
     }    
     stages {
         stage('Build') {
